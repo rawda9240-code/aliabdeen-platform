@@ -1,8 +1,8 @@
 <?php
-$host = "sql307.infinityfree.com";
-$username = "if0_43081047";
-$password = "aliabdeen123";
-$dbname = "if0_43081047_aliabdeen";
+$host = getenv('DB_HOST');
+$username = getenv('DB_USER');
+$password = getenv('DB_PASS');
+$dbname = getenv('DB_NAME');
 
 $conn = new mysqli($host, $username, $password, $dbname);
 $conn->set_charset("utf8mb4");
